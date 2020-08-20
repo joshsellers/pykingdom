@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3116c734-374c-499e-8b0c-0f9b3c82dd30" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pykingdom/globals.py" beforeDir="false" afterPath="$PROJECT_DIR$/pykingdom/globals.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pykingdom/menustate.py" beforeDir="false" afterPath="$PROJECT_DIR$/pykingdom/menustate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pykingdom/playstate.py" beforeDir="false" afterPath="$PROJECT_DIR$/pykingdom/playstate.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +42,7 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pykingdom" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -77,25 +75,25 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1339" height="192" key="GridCell.Tab.0.bottom" timestamp="1597854766074">
+    <state width="1339" height="192" key="GridCell.Tab.0.bottom" timestamp="1597895534855">
       <screen x="0" y="0" width="1360" height="768" />
     </state>
     <state width="1345" height="192" key="GridCell.Tab.0.bottom/0.0.1360.768/-6.768.1366.768@-6.768.1366.768" timestamp="1597825411014" />
-    <state width="1339" height="192" key="GridCell.Tab.0.bottom/0.0.1360.768/-6.768.1366.768@0.0.1360.768" timestamp="1597854766074" />
-    <state width="1339" height="192" key="GridCell.Tab.0.center" timestamp="1597854766074">
+    <state width="1339" height="192" key="GridCell.Tab.0.bottom/0.0.1360.768/-6.768.1366.768@0.0.1360.768" timestamp="1597895534855" />
+    <state width="1339" height="192" key="GridCell.Tab.0.center" timestamp="1597895534855">
       <screen x="0" y="0" width="1360" height="768" />
     </state>
     <state width="1345" height="192" key="GridCell.Tab.0.center/0.0.1360.768/-6.768.1366.768@-6.768.1366.768" timestamp="1597825411013" />
-    <state width="1339" height="192" key="GridCell.Tab.0.center/0.0.1360.768/-6.768.1366.768@0.0.1360.768" timestamp="1597854766074" />
-    <state width="1339" height="192" key="GridCell.Tab.0.left" timestamp="1597854766074">
+    <state width="1339" height="192" key="GridCell.Tab.0.center/0.0.1360.768/-6.768.1366.768@0.0.1360.768" timestamp="1597895534855" />
+    <state width="1339" height="192" key="GridCell.Tab.0.left" timestamp="1597895534854">
       <screen x="0" y="0" width="1360" height="768" />
     </state>
     <state width="1345" height="192" key="GridCell.Tab.0.left/0.0.1360.768/-6.768.1366.768@-6.768.1366.768" timestamp="1597825411013" />
-    <state width="1339" height="192" key="GridCell.Tab.0.left/0.0.1360.768/-6.768.1366.768@0.0.1360.768" timestamp="1597854766074" />
-    <state width="1339" height="192" key="GridCell.Tab.0.right" timestamp="1597854766074">
+    <state width="1339" height="192" key="GridCell.Tab.0.left/0.0.1360.768/-6.768.1366.768@0.0.1360.768" timestamp="1597895534854" />
+    <state width="1339" height="192" key="GridCell.Tab.0.right" timestamp="1597895534855">
       <screen x="0" y="0" width="1360" height="768" />
     </state>
     <state width="1345" height="192" key="GridCell.Tab.0.right/0.0.1360.768/-6.768.1366.768@-6.768.1366.768" timestamp="1597825411014" />
-    <state width="1339" height="192" key="GridCell.Tab.0.right/0.0.1360.768/-6.768.1366.768@0.0.1360.768" timestamp="1597854766074" />
+    <state width="1339" height="192" key="GridCell.Tab.0.right/0.0.1360.768/-6.768.1366.768@0.0.1360.768" timestamp="1597895534855" />
   </component>
 </project>

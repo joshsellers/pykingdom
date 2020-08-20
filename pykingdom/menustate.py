@@ -2,8 +2,10 @@ import sge
 from pykingdom.globals import VERSION
 from pykingdom.playstate import PlayState
 import webbrowser as web
+from os import getcwd as cwd, path
 
-_dir = 'assets/gfx'
+_d = cwd()
+_dir = f'{_d}\\pykingdom\\assets\\gfx'
 _title_img = 'title'
 _noio_img = 'outline_noio'
 _pez_img = 'outline_pez'
@@ -11,7 +13,7 @@ _pez_img = 'outline_pez'
 class MenuState(sge.dsp.Room):
 
     def event_room_start(self):
-        self._version_font = sge.gfx.Font(name='assets/04b03.ttf', size=8)
+        self._version_font = sge.gfx.Font(name=f'{_d}\\pykingdom\\assets\\04b03.ttf', size=8)
 
         title_object = sge.dsp.Object(0, 0, sprite=sge.gfx.Sprite(name=_title_img, directory=_dir))
         self.noio_highlight = sge.dsp.Object(228, 123, sprite=sge.gfx.Sprite(name=_noio_img, directory=_dir))
