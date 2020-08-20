@@ -2,7 +2,7 @@ import sge
 from pykingdom.globals import VERSION
 from pykingdom.playstate import PlayState
 import webbrowser as web
-from os import getcwd as cwd, path
+from os import getcwd as cwd
 
 _d = cwd()
 _dir = f'{_d}\\pykingdom\\assets\\gfx'
