@@ -1,4 +1,5 @@
 # from http://www.quasimondo.com/colormatrix/ColorMatrix.as
+from numpy import zeros
 
 LUMA_R = 0.212671
 LUMA_G = 0.71516
@@ -20,7 +21,7 @@ class ColorMatrix:
         self.matrix = IDENTITY
 
     def concat(self, mat:[]):
-        temp = [] #24
+        temp = zeros(24)
         i = 0
         for y in range(4):
             for x in range(5):
