@@ -39,13 +39,13 @@ class MenuState(sge.dsp.Room):
 
         self.noio_highlight.visible = \
             not self.pez_highlight.visible and \
-            self.noio_highlight.x < x < self.noio_highlight.x + self.noio_highlight.bbox_width \
-            and self.noio_highlight.y < y < self.noio_highlight.y + self.noio_highlight.bbox_height
+            self.noio_highlight.x < x < self.noio_highlight.x + self.noio_highlight.image_width \
+            and self.noio_highlight.y < y < self.noio_highlight.y + self.noio_highlight.image_height
 
         self.pez_highlight.visible = \
             not self.noio_highlight.visible and \
-            self.pez_highlight.x < x < self.pez_highlight.x + self.pez_highlight.bbox_width \
-            and self.pez_highlight.y < y < self.pez_highlight.y + self.pez_highlight.bbox_height
+            self.pez_highlight.x < x < self.pez_highlight.x + self.pez_highlight.image_width \
+            and self.pez_highlight.y < y < self.pez_highlight.y + self.pez_highlight.image_height
 
         self.project_text(self._version_font, f'pykingdom {VERSION}', sge.game.width / 2 - 103,
                           sge.game.height / 2 - 45, 1, halign='left',

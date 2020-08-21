@@ -1,3 +1,4 @@
+import pykingdom.utils
 import pykingdom.sky
 import pykingdom.light
 import pykingdom.sunmoon
@@ -5,7 +6,10 @@ import pykingdom.haze
 import pykingdom.water
 import pykingdom.fog
 import pykingdom.coinsack
+import pykingdom.weatherpresets
+import pykingdom.colormatrix
 import pykingdom.weather
 import pykingdom.buildable
 import pykingdom.castle
 import pykingdom.minimap
+import pykingdom.cameratarget

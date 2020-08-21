@@ -1,2 +1,2 @@
-class Fog():
+class Fog:
     pass
