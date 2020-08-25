@@ -37,7 +37,7 @@ class Weather(sge.dsp.Object):
         self._set_variables(pk.weatherpresets.SUNNY)
 
     def event_step(self, time_passed, delta_mult):
-        self.t += time_passed
+        self.t += (time_passed/1000)
         if self.t - self.changed > 1/30:
             self.update_tween()
             self.changed = self.t

@@ -53,49 +53,49 @@ class PlayState(sge.dsp.Room):
 
     def __init__(self, progress: str = None, **kwargs):
         super().__init__(**kwargs)
-        self.sky: pykingdom.sky.Sky
-        self.sun_moon: pykingdom.sunmoon.SunMoon
-        self.backdrop_far: sge.gfx.Background
-        self.backdrop_close: sge.gfx.Background
-        self.backdrop: [sge.gfx.Background] #? maybe
-        self.haze: pykingdom.haze.Haze
-
-        self.player: sge.gfx.Sprite
-        self.bunnies: [sge.gfx.Sprite] #? maybe
-        self.farmland: [sge.gfx.Sprite]
-        self.coins: [sge.gfx.Sprite]
-        self.beggars: [sge.gfx.Sprite]
-        self.characters: [sge.gfx.Sprite]
-        self.trolls: [sge.gfx.Sprite]
-        self.trolls_no_collide: [sge.gfx.Sprite]
-        self.gibs: [sge.gfx.Sprite]
-        self.indicators: [sge.gfx.Sprite]
-
-        self.walls: [sge.gfx.Sprite]
-        self.level: [sge.gfx.Sprite]
-        self.archers: [sge.gfx.Sprite]
-        self.objects: [sge.gfx.Sprite]
-        self.shops: [sge.gfx.Sprite]
-        self.floor: [sge.gfx.TileGrid]
-        self.farmlands: [sge.gfx.Sprite]
-        self.props: [sge.gfx.Sprite]
-        self.lights: [sge.gfx.Sprite]
-        self.darkness: sge.gfx.Sprite
-        self.water: pykingdom.water.Water
-        self.arrows: [sge.gfx.Sprite]
-        self.fx: [sge.gfx.Sprite]
-        self.fog: pykingdom.fog.Fog
-        self.text: str #implement FlxText
-        self.center_text: str
-        self.sack: pykingdom.coinsack.Coinsack
-        self.noise: sge.gfx.Sprite
-
-        self.weather: pykingdom.weather.Weather
-
-        self.castle: pykingdom.castle.Castle
-        self.minimap: pykingdom.minimap.Minimap
-
-        self.weather_input: None # maybe make this a command interface
+        # self.sky: pykingdom.sky.Sky
+        # self.sun_moon: pykingdom.sunmoon.SunMoon
+        # self.backdrop_far: sge.gfx.Background
+        # self.backdrop_close: sge.gfx.Background
+        # self.backdrop: [sge.gfx.Background] #? maybe
+        # self.haze: pykingdom.haze.Haze
+        #
+        # self.player: sge.gfx.Sprite
+        # self.bunnies: [sge.gfx.Sprite] #? maybe
+        # self.farmland: [sge.gfx.Sprite]
+        # self.coins: [sge.gfx.Sprite]
+        # self.beggars: [sge.gfx.Sprite]
+        # self.characters: [sge.gfx.Sprite]
+        # self.trolls: [sge.gfx.Sprite]
+        # self.trolls_no_collide: [sge.gfx.Sprite]
+        # self.gibs: [sge.gfx.Sprite]
+        # self.indicators: [sge.gfx.Sprite]
+        #
+        # self.walls: [sge.gfx.Sprite]
+        # self.level: [sge.gfx.Sprite]
+        # self.archers: [sge.gfx.Sprite]
+        # self.objects: [sge.gfx.Sprite]
+        # self.shops: [sge.gfx.Sprite]
+        # self.floor: [sge.gfx.TileGrid]
+        # self.farmlands: [sge.gfx.Sprite]
+        # self.props: [sge.gfx.Sprite]
+        # self.lights: [sge.gfx.Sprite]
+        # self.darkness: sge.gfx.Sprite
+        # self.water: pykingdom.water.Water
+        # self.arrows: [sge.gfx.Sprite]
+        # self.fx: [sge.gfx.Sprite]
+        # self.fog: pykingdom.fog.Fog
+        # self.text: str #implement FlxText
+        # self.center_text: str
+        # self.sack: pykingdom.coinsack.Coinsack
+        # self.noise: sge.gfx.Sprite
+        #
+        # self.weather: pykingdom.weather.Weather
+        #
+        # self.castle: pykingdom.castle.Castle
+        # self.minimap: pykingdom.minimap.Minimap
+        #
+        # self.weather_input: None # maybe make this a command interface
 
         # game vars
         self.kingdom_left = 1920-200
@@ -172,3 +172,8 @@ class PlayState(sge.dsp.Room):
 
         # basic setup
         self.weather = pykingdom.weather.Weather()
+        self.sky = pykingdom.sky.Sky(self.weather)
+        self.add(self.sky)
+
+    def event_step(self, time_passed, delta_mult):
+        self.weather.event_step(time_passed, delta_mult)

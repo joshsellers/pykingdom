@@ -1,5 +1,4 @@
 import pykingdom.utils
-import pykingdom.sky
 import pykingdom.light
 import pykingdom.sunmoon
 import pykingdom.haze
@@ -13,3 +12,4 @@ import pykingdom.buildable
 import pykingdom.castle
 import pykingdom.minimap
 import pykingdom.cameratarget
+import pykingdom.sky
